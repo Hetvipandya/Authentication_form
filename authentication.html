@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="title">Registration Form</div>
+  <a href="login.html">Click here for login</a>
+    <hr>
+    <div class="content">
+
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" id="fname" required>
+          </div><br>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" id="uname" required>
+          </div><br>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" id="email" required>
+          </div><br>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Enter your password" id="pass" required>
+          </div><br>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Address" id="address" required>
+          </div><br>
+          <div style="margin: 0; justify-content: start; margin-right: 150px;">
+            <span class="details">Gender</span><br> 
+            <input type="radio" id="male"  value="male" style="width: 10px;"/>
+           Male
+         <input type="radio" id="female"  value="female" checked style="width: 10px;"/>
+           Female
+          </div><br>
+          <div class="input-box">
+            <span class="details">Date of birth</span>
+            <input type="date" id="dob" required>
+          </div>
+        </div>
+        <div class="button-container">
+          <div class="button">
+            <input type="button" value="Register" onclick="validateForm()">
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
